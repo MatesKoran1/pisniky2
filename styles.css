@@ -1,0 +1,63 @@
+body {
+    font-family: Times, Georgia, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title-bar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.title-bar:hover {
+    background-color: #555;
+}
+
+.moving-logo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: moveLogo 5s linear infinite alternate;
+}
+
+@keyframes moveLogo {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50px); }
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
